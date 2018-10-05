@@ -376,8 +376,13 @@ figure {
     width: auto;
     font-size: 16px;
   }
+  .project-course, .project-date, .project-url {
+    margin: .3em 0;
+  }
+
   .project-title{
     font-size: 1.5em;
+    margin-bottom: .5em;
   }
   .project-url{
     font-size: 1em;
