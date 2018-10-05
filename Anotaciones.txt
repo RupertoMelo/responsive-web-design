@@ -1,0 +1,42 @@
+//Medidas relativas en css
+Viewport Es la vista de lo que alcanzamos a ver en la pantalla
+//Porcentaje <---Longitud referente a los elementos padres
+//em <--- unidad relativa a la fuente padre más cercana incluyendo el propio elemento igual aplica cuando se tienen en una clase el tamaño de la fuente está propiedad sería el elemento padre para otro por ejemplo padding, margin, etc.
+//rem <--- Unidad relativa al ancestro más lejano(html o body)
+//vw/vh <-- Unidad relativa respecto al viewport
+
+//Media Querys
+Módulo de css3 que permite adaptar la representación  del contenido a características del dispositivo.
+@media media-type and (condicion){
+}
+Ejemplo:
+
+@media screen and(max-width:768){
+}
+
+min-width ---desde
+max-with ---hasta
+
+Móviles: entre 320 y 480 píxeles.
+Tablets: entre 768 y 1024 píxeles.
+Pantallas grandes: más de 1024 píxeles o más.
+
+//Formas de poner media querys
+
+//condicionas a que se use una hoja de estilos
+<link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"> 
+
+//En la hoja de estilos
+@media screen and (max-width:768px){
+  body{
+    margin: 10px solid red;
+  }
+
+//En la etiqueta style
+    <style>
+      @media screen and (max-width:768px){
+        body{
+          border: 10px solid blue;
+          }
+      }
+    </style>
